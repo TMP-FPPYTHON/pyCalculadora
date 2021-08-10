@@ -92,18 +92,22 @@ def menu():
 
     return opcion
 
-opcion = "1"
-while opcion != "*":
-    opcion = menu()
+def main():
+    opcion = "1"
+    while opcion != "*":
+        opcion = menu()
 
-    if opcion == "1":
-        suma()
-    elif opcion == "2":
-        resta()
-    elif opcion == "3":
-        multiplica()
-    elif opcion == "4":
-        divide()
+        if opcion == "1":
+            suma()
+        elif opcion == "2":
+            resta()
+        elif opcion == "3":
+            multiplica()
+        elif opcion == "4":
+            divide()
         
-os.system("clear")
-print("Fin de la calculadora...")
+    os.system("clear")
+    print("Fin de la calculadora...")
+
+if __name__=='__main__':
+    main()
